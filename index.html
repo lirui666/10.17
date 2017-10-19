@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<textarea onkeyup="checkLen(this)"></textarea>
+		<input type="button" id="btn" value="点击">
+		<script type="text/javascript">
+			function checkLen(obj) {
+				var maxChars = 5;   
+				if(obj.value.length > maxChars) {
+				btn.setAttribute('disabled','true')
+				}
+			}
+		</script>
+	</body>
+
+</html>
